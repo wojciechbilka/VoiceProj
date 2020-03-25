@@ -1,4 +1,4 @@
 public interface Paws {
 
-    void pawsNumber();
+    Integer pawsNumber();
 }
