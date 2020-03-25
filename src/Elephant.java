@@ -1,10 +1,17 @@
-public class Elephant implements Voice, Paws{
+public class Elephant implements Animal {
 
-    public void giveVoice() {System.out.println("Toot tooot");
+    private int paws = 4;
+
+    public void setPaws(int paws) {
+        this.paws = paws;
+    }
+
+    public String giveVoice() {
+        return "Toot tooot";
     }
 
     @Override
     public Integer pawsNumber() {
-        return 4;
+        return paws;
     }
 }
