@@ -1,12 +1,18 @@
-public class Lion implements Voice,Paws {
+public class Lion implements Animal {
+
+    private int paws = 4;
+
+    public void setPaws(int paws) {
+        this.paws = paws;
+    }
 
     @Override
-    public void giveVoice() {
-        System.out.println("Roar");
+    public String giveVoice() {
+        return "Roar";
     }
 
     @Override
     public Integer pawsNumber() {
-        return 4;
+        return paws;
     }
 }
