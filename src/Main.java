@@ -19,7 +19,7 @@ public class Main {
         listVoice.add(salmon);
 
         for (Voice v : listVoice) {
-            System.out.println(v.getClass().getSimpleName() + " does " + v.giveVoice());
+            System.out.println(v.getClass().getSimpleName() + " goes " + v.giveVoice());
         }
 
         // Paws List
@@ -47,7 +47,7 @@ public class Main {
         listAnimal.add(elephant1);
 
         for (Animal v : listAnimal) {
-            System.out.println(v.getClass().getSimpleName() + " does " + v.giveVoice() + " and has " + v.pawsNumber() + " paws.");
+            System.out.println(v.getClass().getSimpleName() + " goes " + v.giveVoice() + " and has " + v.pawsNumber() + " paws.");
         }
     }
 }
