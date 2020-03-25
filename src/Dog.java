@@ -1,13 +1,18 @@
-public class Dog implements Voice, Paws {
+public class Dog implements Animal {
 
-    @Override
-    public void giveVoice() {
-        System.out.println("Whoff");
+    private int paws = 4;
+
+    public void setPaws(int paws) {
+        this.paws = paws;
     }
 
+    @Override
+    public String giveVoice() {
+        return "Whoff";
+    }
 
     @Override
     public Integer pawsNumber() {
-        return 4;
+        return paws;
     }
 }
